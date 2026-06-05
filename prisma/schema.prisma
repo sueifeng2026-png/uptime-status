@@ -43,3 +43,9 @@ model Incident {
   updatedAt   DateTime  @updatedAt
   resolvedAt  DateTime?
 }
+
+model PageView {
+  id        String   @id @default(cuid())
+  path      String
+  createdAt DateTime @default(now())
+}

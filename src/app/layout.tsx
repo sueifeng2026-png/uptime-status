@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import Link from "next/link"
+import ViewTracker from "@/components/ViewTracker"
 
 export const metadata: Metadata = {
   title: "Uptime Status",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="bg-gray-950 text-gray-100 min-h-screen antialiased">
+        <ViewTracker />
         <nav className="border-b border-gray-800 bg-gray-900/50 backdrop-blur">
           <div className="max-w-3xl mx-auto px-4 h-12 flex items-center justify-between">
             <Link href="/status" className="font-bold text-emerald-400 tracking-tight">

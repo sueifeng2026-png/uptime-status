@@ -8,10 +8,18 @@ function StatusBadge({ status }: { status: string }) {
     up: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
     down: "bg-red-500/20 text-red-400 border-red-500/30",
     unknown: "bg-gray-500/20 text-gray-400 border-gray-500/30",
+    investigating: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+    identified: "bg-orange-500/20 text-orange-400 border-orange-500/30",
+    monitoring: "bg-blue-500/20 text-blue-400 border-blue-500/30",
+    resolved: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
   }
-  const labels = { up: "Operational", down: "Down", unknown: "Unknown" }
-  const c = colors[status as keyof typeof colors] || colors.unknown
-  const l = labels[status as keyof typeof labels] || labels.unknown
+  const labels: Record<string, string> = {
+    up: "Operational", down: "Down", unknown: "Unknown",
+    investigating: "Investigating", identified: "Identified",
+    monitoring: "Monitoring", resolved: "Resolved",
+  }
+  const c = colors[status] || colors.unknown
+  const l = labels[status] || labels.unknown
   return <span className={`text-xs px-2.5 py-1 rounded-full border ${c}`}>{l}</span>
 }
 
@@ -37,6 +45,14 @@ export default async function StatusPage() {
     include: { checks: { orderBy: { createdAt: "desc" }, take: 90 } },
   })
 
+  const incidents = await prisma.incident.findMany({
+    orderBy: { createdAt: "desc" },
+    include: { service: { select: { name: true } } },
+    take: 5,
+  })
+
+  const viewCount = await prisma.pageView.count()
+
   const allUp = services.length > 0 && services.every((s) => s.status === "up")
   const anyDown = services.some((s) => s.status === "down")
   const uptimePercent = services.length > 0
@@ -58,9 +74,29 @@ export default async function StatusPage() {
         {services.length > 0 && (
           <p className="text-sm text-gray-500 mt-1">
             {uptimePercent}% uptime · {services.length} service{services.length > 1 ? "s" : ""} monitored
+            {viewCount > 0 && <> · {viewCount.toLocaleString()} views</>}
           </p>
         )}
       </div>
+
+      {/* Active Incidents */}
+      {incidents.filter(i => i.status !== "resolved").length > 0 && (
+        <div className="mb-6 bg-red-500/5 border border-red-500/20 rounded-xl p-4">
+          <h3 className="font-semibold text-red-400 text-sm mb-3">
+            🚨 Active Incident{incidents.filter(i => i.status !== "resolved").length > 1 ? "s" : ""}
+          </h3>
+          {incidents.filter(i => i.status !== "resolved").slice(0, 3).map((inc) => (
+            <div key={inc.id} className="mb-2 last:mb-0">
+              <div className="flex items-center gap-2">
+                <StatusBadge status={inc.status} />
+                <span className="text-sm font-medium">{inc.title}</span>
+                <span className="text-xs text-gray-500">· {inc.service.name}</span>
+              </div>
+              {inc.description && <p className="text-xs text-gray-400 mt-1 ml-0">{inc.description}</p>}
+            </div>
+          ))}
+        </div>
+      )}
 
       <div className="space-y-3">
         {services.map((svc) => (
@@ -91,22 +127,41 @@ export default async function StatusPage() {
         )}
       </div>
 
+      {/* Recent Incidents History */}
+      {incidents.length > 0 && (
+        <div className="mt-8 bg-gray-900 border border-gray-800 rounded-xl p-5">
+          <h3 className="font-semibold text-sm mb-3">Recent Incidents</h3>
+          <div className="space-y-2">
+            {incidents.slice(0, 5).map((inc) => (
+              <div key={inc.id} className="flex items-center gap-3 text-xs">
+                <StatusBadge status={inc.status} />
+                <span className="text-gray-300">{inc.title}</span>
+                <span className="text-gray-600">· {inc.service.name}</span>
+                <span className="text-gray-600 ml-auto">
+                  {new Date(inc.createdAt).toLocaleDateString()}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Managed Features Teaser */}
-      <div className="mt-8 bg-gray-900 border border-gray-700 rounded-xl p-5">
+      <div className="mt-6 bg-gray-900 border border-gray-700 rounded-xl p-5">
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-semibold text-sm">🔒 Managed Hosting Features</h3>
           <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full border border-emerald-500/30">$19 lifetime</span>
         </div>
         <div className="grid grid-cols-2 gap-2">
           {[
-            { icon: "📧", text: "Email alerts on downtime", locked: true },
-            { icon: "🔔", text: "Slack / Discord notifications", locked: true },
-            { icon: "🌐", text: "Custom domain (status.yours.com)", locked: true },
-            { icon: "🎨", text: "White-label branding & logo", locked: true },
-            { icon: "📊", text: "30-day uptime history", locked: true },
-            { icon: "⚡", text: "30-second check intervals", locked: true },
-            { icon: "🔒", text: "SSL certificate monitoring", locked: true },
-            { icon: "👥", text: "Team access (multi-user)", locked: true },
+            { icon: "📧", text: "Email alerts on downtime" },
+            { icon: "🔔", text: "Slack / Discord notifications" },
+            { icon: "🌐", text: "Custom domain (status.yours.com)" },
+            { icon: "🎨", text: "White-label branding & logo" },
+            { icon: "📊", text: "30-day uptime history" },
+            { icon: "⚡", text: "30-second check intervals" },
+            { icon: "🔒", text: "SSL certificate monitoring" },
+            { icon: "👥", text: "Team access (multi-user)" },
           ].map((f, i) => (
             <div key={i} className="flex items-center gap-2 text-xs text-gray-500 py-1">
               <span className="opacity-50">{f.icon}</span>
