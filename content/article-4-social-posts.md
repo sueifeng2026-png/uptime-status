@@ -19,7 +19,7 @@ Hey r/selfhosted! I got tired of paying for status page services, so I built my 
 
 **License**: MIT
 
-**Repo**: https://github.com/willy2023/uptime-status
+**Repo**: https://https://8edaa360e76210c9-186-18-100-79.serveousercontent.com
 
 Would love feedback! What features would you want in a status page?
 
@@ -35,7 +35,7 @@ The big players (Statuspage, BetterStack) charge $24-99/month. This is free, ope
 
 Stack: Next.js 14, Prisma, TypeScript, Tailwind. ~800 lines of code.
 
-GitHub: https://github.com/willy2023/uptime-status
+GitHub: https://https://8edaa360e76210c9-186-18-100-79.serveousercontent.com
 
 Would love feedback from the HN community.
 
@@ -70,7 +70,7 @@ All the boring tech, none of the complexity.
 **Tweet 5**:
 Self-host it for free, or I'll host it for you for $19 (one-time, lifetime).
 
-GitHub: github.com/willy2023/uptime-status
+GitHub: https://8edaa360e76210c9-186-18-100-79.serveousercontent.com
 
 Stars make my day ?
 
@@ -95,6 +95,6 @@ BetterStack 免费版限制太多，Atlassian Statuspage 每月 $99 起步。对
 
 技术栈：Next.js 14 + Prisma + TypeScript + Tailwind CSS
 
-GitHub: https://github.com/willy2023/uptime-status
+GitHub: https://https://8edaa360e76210c9-186-18-100-79.serveousercontent.com
 
 如果你也在找轻量级的状态页方案，可以试试。欢迎 Star ?
