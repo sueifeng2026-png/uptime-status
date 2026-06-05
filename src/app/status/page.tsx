@@ -83,7 +83,23 @@ export default async function StatusPage() {
         )}
       </div>
 
-      <div className="mt-10 bg-gradient-to-r from-emerald-500/10 to-amber-500/10 border border-gray-800 rounded-xl p-6 text-center">
+      {/* Status Badge */}
+      <div className="mt-8 bg-gray-900 border border-gray-800 rounded-xl p-5">
+        <h3 className="font-semibold text-sm mb-2">Embed Status Badge</h3>
+        <p className="text-xs text-gray-400 mb-3">
+          Add a live status badge to your README or website:
+        </p>
+        <div className="bg-gray-950 border border-gray-700 rounded-lg p-3 overflow-x-auto">
+          <code className="text-xs text-gray-300 whitespace-nowrap">
+            {"[![Status](YOUR_DOMAIN/api/badge)](YOUR_DOMAIN/status)"}
+          </code>
+        </div>
+        <div className="mt-3 flex justify-center">
+          <img src="/api/badge" alt="System Status" className="h-5" />
+        </div>
+      </div>
+
+      <div className="mt-6 bg-gradient-to-r from-emerald-500/10 to-amber-500/10 border border-gray-800 rounded-xl p-6 text-center">
         <p className="text-emerald-400 font-medium text-lg mb-2">Powered by Uptime Status</p>
         <p className="text-gray-400 text-sm mb-4">
           Self-host for free. Want automatic alerts, custom domain, and zero maintenance?
