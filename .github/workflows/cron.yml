@@ -1,0 +1,13 @@
+name: Health Check Cron
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger health checks
+        run: |
+          curl -s -X GET "${{ secrets.APP_URL }}/api/cron" || echo "App not yet deployed"
