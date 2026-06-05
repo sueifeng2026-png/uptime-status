@@ -6,7 +6,7 @@
 
 If you run any kind of online service, you need a status page. But the big players (Statuspage, BetterStack) charge premium prices for what's essentially a checklist with green/red dots.
 
-Here are 5 alternatives that won't break the bank ¡ª including one I built myself.
+Here are 5 alternatives that won't break the bank â€” including one I built myself.
 
 ## The Landscape
 
@@ -20,7 +20,7 @@ Here are 5 alternatives that won't break the bank ¡ª including one I built mysel
 
 ## 1. Upptime
 
-Upptime is clever ¡ª it uses GitHub Actions as a cron scheduler and GitHub Pages for the status page. Free and clever, but limited by GitHub's rate limits and Actions minutes.
+Upptime is clever â€” it uses GitHub Actions as a cron scheduler and GitHub Pages for the status page. Free and clever, but limited by GitHub's rate limits and Actions minutes.
 
 **Best for**: Developers who want zero-infrastructure monitoring.
 
@@ -56,5 +56,5 @@ The entire codebase is ~800 lines. MIT licensed. You can read it in an afternoon
 
 ---
 
-GitHub: https://github.com/YOUR_USERNAME/uptime-status
+GitHub: https://github.com/willy2023/uptime-status
 Stars make my day ?

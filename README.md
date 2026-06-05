@@ -1,16 +1,16 @@
 # ?? Uptime Status
 
-Lightweight self-hosted status page & uptime monitor. Monitor your services, display a beautiful public status page, and get instant health checks ¡ª all in one simple Next.js app.
+Lightweight self-hosted status page & uptime monitor. Monitor your services, display a beautiful public status page, and get instant health checks â€” all in one simple Next.js app.
 
 ## ? Features
 
-- **Service Monitoring** ¡ª Add HTTP endpoints and monitor their health
-- **Public Status Page** ¡ª Beautiful, real-time status dashboard for your users
-- **Admin Panel** ¡ª Add, edit, remove services; trigger on-demand checks
-- **Health Checks** ¡ª Automatic HTTP ping with response time tracking
-- **Uptime History** ¡ª Visual bar chart of recent check results
-- **Self-Hosted** ¡ª Runs anywhere, your data stays with you
-- **Zero Cost** ¡ª Uses SQLite, deploy on free tier services
+- **Service Monitoring** â€” Add HTTP endpoints and monitor their health
+- **Public Status Page** â€” Beautiful, real-time status dashboard for your users
+- **Admin Panel** â€” Add, edit, remove services; trigger on-demand checks
+- **Health Checks** â€” Automatic HTTP ping with response time tracking
+- **Uptime History** â€” Visual bar chart of recent check results
+- **Self-Hosted** â€” Runs anywhere, your data stays with you
+- **Zero Cost** â€” Uses SQLite, deploy on free tier services
 
 ## ?? Quick Start
 
@@ -23,7 +23,7 @@ Lightweight self-hosted status page & uptime monitor. Monitor your services, dis
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/uptime-status.git
+git clone https://github.com/willy2023/uptime-status.git
 cd uptime-status
 
 # Install dependencies
@@ -36,13 +36,13 @@ npx prisma db push
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) ¡ª status page is at `/status`, admin panel at `/admin`.
+Open [http://localhost:3000](http://localhost:3000) â€” status page is at `/status`, admin panel at `/admin`.
 
 ## ?? Deploy
 
 ### Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/uptime-status)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/willy2023/uptime-status)
 
 > Note: SQLite on Vercel is read-only in production. Use Turso or a different DB provider for production deployments.
 
@@ -55,7 +55,7 @@ docker run -p 3000:3000 -v $(pwd)/data:/app/prisma uptime-status
 
 ### Railway / Render
 
-Works out of the box ¡ª just point to the repo and set build command to `npm run build`, start command to `npm start`.
+Works out of the box â€” just point to the repo and set build command to `npm run build`, start command to `npm start`.
 
 ## ?? Cron Setup
 
@@ -103,7 +103,7 @@ jobs:
 
 ## ?? License
 
-MIT ¡ª see [LICENSE](./LICENSE) for details.
+MIT â€” see [LICENSE](./LICENSE) for details.
 
 ## ?? Contributing
 
@@ -120,9 +120,9 @@ Contributions welcome! Open an issue or PR.
 If Uptime Status helps you, consider:
 
 - ? Starring the repo on GitHub
-- ?? [GitHub Sponsors](https://github.com/sponsors/YOUR_USERNAME)
-- ?? [Managed Hosting](https://your-domain.com) ¡ª $19 one-time, we host it for you
+- ?? [GitHub Sponsors](https://github.com/sponsors/willy2023)
+- ?? [Managed Hosting](https://your-domain.com) â€” $19 one-time, we host it for you
 
 ---
 
-Built with ?? by [Your Name](https://github.com/YOUR_USERNAME)
+Built with ?? by [Your Name](https://github.com/willy2023)

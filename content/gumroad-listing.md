@@ -7,11 +7,11 @@
 
 ### What You Get
 - **Fully managed status page** at `your-project.uptimestatus.dev`
-- **Unlimited services** ¡ª monitor as many endpoints as you want
+- **Unlimited services** â€” monitor as many endpoints as you want
 - **Automatic health checks** every 5 minutes
 - **Custom domain** support (bring your own domain)
-- **Lifetime access** ¡ª pay once, use forever
-- **No code required** ¡ª we handle everything
+- **Lifetime access** â€” pay once, use forever
+- **No code required** â€” we handle everything
 
 ### Why Self-Hosted Isn't For Everyone
 The open-source version is great, but you need to:
@@ -29,7 +29,7 @@ With Managed Hosting, you get all of that done for you. One payment, zero hassle
 - Anyone who wants "set it and forget it"
 
 ### Pricing
-**$19** ¡ª One-time payment, lifetime access
+**$19** â€” One-time payment, lifetime access
 
 Includes: unlimited services, automatic checks, custom domain, email alerts (coming soon)
 
@@ -41,7 +41,7 @@ A: Yes. Pay once, use forever. We cover hosting costs from our margins.
 A: Yes! Just point your CNAME record to us.
 
 **Q: What happens if your servers go down?**
-A: Our monitoring infrastructure runs on multiple cloud providers. If we go down, you'll know ¡ª and so will we.
+A: Our monitoring infrastructure runs on multiple cloud providers. If we go down, you'll know â€” and so will we.
 
 **Q: Can I cancel and get a refund?**
 A: 30-day money-back guarantee. No questions asked.
@@ -49,6 +49,6 @@ A: 30-day money-back guarantee. No questions asked.
 ---
 
 ## Links
-- GitHub: https://github.com/YOUR_USERNAME/uptime-status
+- GitHub: https://github.com/willy2023/uptime-status
 - Demo: https://uptime-status-demo.vercel.app/status
 - Managed: https://your-domain.com (coming soon)

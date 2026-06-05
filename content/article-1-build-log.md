@@ -1,6 +1,6 @@
 # I Built a Self-Hosted Status Page in 3 Days (And Open-Sourced It)
 
-**Target platforms**: Dev.to, Medium, ¾ò½ð, Hacker News (Show HN)
+**Target platforms**: Dev.to, Medium, æŽ˜é‡‘, Hacker News (Show HN)
 
 ---
 
@@ -19,14 +19,14 @@ So I built my own. In 3 days. And I'm giving it away for free.
 - Shows a beautiful public status dashboard
 - Tracks response times and uptime history
 - Has a simple admin panel for managing services
-- Uses SQLite ¡ª zero external dependencies
+- Uses SQLite â€” zero external dependencies
 
 ## The Tech Stack
 
-- **Next.js 14** (App Router) ¡ª for the full-stack experience
-- **Prisma + SQLite** ¡ª because I don't want to manage a database
-- **Tailwind CSS** ¡ª because writing CSS from scratch is 2022
-- **TypeScript** ¡ª because I'm not a savage
+- **Next.js 14** (App Router) â€” for the full-stack experience
+- **Prisma + SQLite** â€” because I don't want to manage a database
+- **Tailwind CSS** â€” because writing CSS from scratch is 2022
+- **TypeScript** â€” because I'm not a savage
 
 The entire app is ~800 lines of code. That's it.
 
@@ -39,7 +39,7 @@ The entire app is ~800 lines of code. That's it.
 ## How to Deploy
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/uptime-status
+git clone https://github.com/willy2023/uptime-status
 cd uptime-status
 npm install
 npx prisma db push
@@ -57,7 +57,7 @@ Or deploy to Vercel with one click. (I'll add a Deploy button soon.)
 
 ## Try It
 
-GitHub: https://github.com/YOUR_USERNAME/uptime-status
+GitHub: https://github.com/willy2023/uptime-status
 MIT License. Stars appreciated ?
 
 ---

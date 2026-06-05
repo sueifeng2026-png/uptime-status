@@ -19,14 +19,14 @@ Hey r/selfhosted! I got tired of paying for status page services, so I built my 
 
 **License**: MIT
 
-**Repo**: https://github.com/YOUR_USERNAME/uptime-status
+**Repo**: https://github.com/willy2023/uptime-status
 
 Would love feedback! What features would you want in a status page?
 
 ---
 
 ## Hacker News (Show HN)
-**Title**: Show HN: Uptime Status ¡ª A free, self-hosted status page (MIT)
+**Title**: Show HN: Uptime Status â€” A free, self-hosted status page (MIT)
 
 **Body**:
 I built a lightweight status page that you can self-host in 5 minutes.
@@ -35,7 +35,7 @@ The big players (Statuspage, BetterStack) charge $24-99/month. This is free, ope
 
 Stack: Next.js 14, Prisma, TypeScript, Tailwind. ~800 lines of code.
 
-GitHub: https://github.com/YOUR_USERNAME/uptime-status
+GitHub: https://github.com/willy2023/uptime-status
 
 Would love feedback from the HN community.
 
@@ -60,41 +60,41 @@ So I built Uptime Status:
 
 **Tweet 4**:
 Stack:
-¡ú Next.js 14 (App Router)
-¡ú Prisma + SQLite
-¡ú Tailwind CSS
-¡ú TypeScript
+â†’ Next.js 14 (App Router)
+â†’ Prisma + SQLite
+â†’ Tailwind CSS
+â†’ TypeScript
 
 All the boring tech, none of the complexity.
 
 **Tweet 5**:
 Self-host it for free, or I'll host it for you for $19 (one-time, lifetime).
 
-GitHub: github.com/YOUR_USERNAME/uptime-status
+GitHub: github.com/willy2023/uptime-status
 
 Stars make my day ?
 
 ---
 
-## ¾ò½ğ/Öªºõ (Chinese platforms)
-**±êÌâ**: ÎÒ»¨3ÌìĞ´ÁË¸ö¿ªÔ´×´Ì¬Ò³¹¤¾ß£¬ÔÙÒ²²»ÓÃ¸ø BetterStack ½»ÔÂ·ÑÁË
+## æ˜é‡‘/çŸ¥ä¹ (Chinese platforms)
+**æ ‡é¢˜**: æˆ‘èŠ±3å¤©å†™äº†ä¸ªå¼€æºçŠ¶æ€é¡µå·¥å…·ï¼Œå†ä¹Ÿä¸ç”¨ç»™ BetterStack äº¤æœˆè´¹äº†
 
-**ÕıÎÄ**:
-Ã¿¸ö¶ÀÁ¢¿ª·¢Õß¶¼ĞèÒªÒ»¸ö×´Ì¬Ò³£¬µ«ÊĞÃæÉÏµÄÑ¡ÔñÒªÃ´¹ó¡¢ÒªÃ´ÄÑÓÃ¡£
+**æ­£æ–‡**:
+æ¯ä¸ªç‹¬ç«‹å¼€å‘è€…éƒ½éœ€è¦ä¸€ä¸ªçŠ¶æ€é¡µï¼Œä½†å¸‚é¢ä¸Šçš„é€‰æ‹©è¦ä¹ˆè´µã€è¦ä¹ˆéš¾ç”¨ã€‚
 
-BetterStack Ãâ·Ñ°æÏŞÖÆÌ«¶à£¬Atlassian Statuspage Ã¿ÔÂ $99 Æğ²½¡£¶ÔÓÚ¸±ÒµÏîÄ¿À´Ëµ£¬Õâ²»ºÏÀí¡£
+BetterStack å…è´¹ç‰ˆé™åˆ¶å¤ªå¤šï¼ŒAtlassian Statuspage æ¯æœˆ $99 èµ·æ­¥ã€‚å¯¹äºå‰¯ä¸šé¡¹ç›®æ¥è¯´ï¼Œè¿™ä¸åˆç†ã€‚
 
-ÓÚÊÇÎÒ×Ô¼ºĞ´ÁËÒ»¸ö ¡ª¡ª **Uptime Status**£º
+äºæ˜¯æˆ‘è‡ªå·±å†™äº†ä¸€ä¸ª â€”â€” **Uptime Status**ï¼š
 
-? ÍêÈ«¿ªÔ´£¨MIT£©
-? SQLite Êı¾İ¿â£¬Áã¶îÍâ³É±¾
-? Ö§³Ö Vercel / Docker / Railway ²¿Êğ
-? Æ¯ÁÁµÄ°µÉ«Ö÷Ìâ UI
-? ÏìÓ¦Ê±¼ä×·×Ù + ¿ÉÓÃĞÔÀúÊ·Í¼±í
-? 5·ÖÖÓ¼´¿É²¿ÊğÉÏÏß
+? å®Œå…¨å¼€æºï¼ˆMITï¼‰
+? SQLite æ•°æ®åº“ï¼Œé›¶é¢å¤–æˆæœ¬
+? æ”¯æŒ Vercel / Docker / Railway éƒ¨ç½²
+? æ¼‚äº®çš„æš—è‰²ä¸»é¢˜ UI
+? å“åº”æ—¶é—´è¿½è¸ª + å¯ç”¨æ€§å†å²å›¾è¡¨
+? 5åˆ†é’Ÿå³å¯éƒ¨ç½²ä¸Šçº¿
 
-¼¼ÊõÕ»£ºNext.js 14 + Prisma + TypeScript + Tailwind CSS
+æŠ€æœ¯æ ˆï¼šNext.js 14 + Prisma + TypeScript + Tailwind CSS
 
-GitHub: https://github.com/YOUR_USERNAME/uptime-status
+GitHub: https://github.com/willy2023/uptime-status
 
-Èç¹ûÄãÒ²ÔÚÕÒÇáÁ¿¼¶µÄ×´Ì¬Ò³·½°¸£¬¿ÉÒÔÊÔÊÔ¡£»¶Ó­ Star ?
+å¦‚æœä½ ä¹Ÿåœ¨æ‰¾è½»é‡çº§çš„çŠ¶æ€é¡µæ–¹æ¡ˆï¼Œå¯ä»¥è¯•è¯•ã€‚æ¬¢è¿ Star ?

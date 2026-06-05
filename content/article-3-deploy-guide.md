@@ -1,6 +1,6 @@
 # How to Deploy Your Own Status Page on Vercel (Free, 5 Minutes)
 
-**Target**: Dev.to, ¾ò½ð, personal blog
+**Target**: Dev.to, æŽ˜é‡‘, personal blog
 
 ---
 
@@ -13,7 +13,7 @@ Want a status page for your side project but don't want to pay for BetterStack? 
 ## Step 1: Clone the Repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/uptime-status
+git clone https://github.com/willy2023/uptime-status
 cd uptime-status
 ```
 
@@ -23,7 +23,7 @@ The easiest way:
 
 1. Go to [vercel.com/new](https://vercel.com/new)
 2. Import your cloned repo
-3. Vercel auto-detects Next.js ¡ª no config needed
+3. Vercel auto-detects Next.js â€” no config needed
 4. Click Deploy
 
 That's it. Your status page is live at `your-project.vercel.app`.
@@ -60,7 +60,7 @@ Your status page is at `your-project.vercel.app/status`. Share it with your user
 1. Buy a domain (or use a subdomain like `status.yourdomain.com`)
 2. Add it in Vercel's project settings
 3. Update DNS
-4. Done ¡ª professional status page on your own domain
+4. Done â€” professional status page on your own domain
 
 ## Cost Breakdown
 
@@ -75,5 +75,5 @@ Compare that to $24-99/month for commercial alternatives.
 
 ---
 
-GitHub: https://github.com/YOUR_USERNAME/uptime-status
+GitHub: https://github.com/willy2023/uptime-status
 Questions? Open an issue or drop a comment below.
