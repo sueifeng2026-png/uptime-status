@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect, useCallback } from "react"
+import Link from "next/link"
 
 interface Service {
   id: string
@@ -95,9 +96,9 @@ export default function AdminPage() {
           <h1 className="text-2xl font-bold">Admin Panel</h1>
           <p className="text-sm text-gray-400 mt-1">Manage your monitored services</p>
         </div>
-        <a href="/status" className="text-sm text-blue-400 hover:underline">
+        <Link href="/status" className="text-sm text-blue-400 hover:underline">
           View Status Page &rarr;
-        </a>
+        </Link>
       </div>
 
       {/* Toast */}
@@ -151,6 +152,22 @@ export default function AdminPage() {
           </div>
         </div>
       </form>
+
+      {/* Managed Hosting Banner */}
+      <Link
+        href="/pricing"
+        className="block bg-gradient-to-r from-emerald-500/10 to-emerald-500/5 border border-emerald-500/20 rounded-xl p-4 mb-6 hover:border-emerald-500/40 transition-colors group"
+      >
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="font-medium text-emerald-400 text-sm">Tired of self-hosting?</p>
+            <p className="text-xs text-gray-400 mt-0.5">
+              Get Managed Hosting -- automatic updates, email alerts, custom domain. One-time $19.
+            </p>
+          </div>
+          <span className="text-emerald-400 text-lg group-hover:translate-x-1 transition-transform">&rarr;</span>
+        </div>
+      </Link>
 
       {/* Service list */}
       <div className="flex items-center justify-between mb-4">

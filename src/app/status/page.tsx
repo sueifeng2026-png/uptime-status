@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/prisma"
+import Link from "next/link"
 
 export const dynamic = "force-dynamic"
 
@@ -82,24 +83,33 @@ export default async function StatusPage() {
         )}
       </div>
 
-      <div className="mt-10 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-6 text-center">
-        <p className="text-amber-300 font-medium text-lg mb-2">Support This Project</p>
+      <div className="mt-10 bg-gradient-to-r from-emerald-500/10 to-amber-500/10 border border-gray-800 rounded-xl p-6 text-center">
+        <p className="text-emerald-400 font-medium text-lg mb-2">Powered by Uptime Status</p>
         <p className="text-gray-400 text-sm mb-4">
-          Uptime Status is free and open source. If it helps you, consider buying me a coffee!
+          Self-host for free. Want automatic alerts, custom domain, and zero maintenance?
+          {" "}Let us host it for you.
         </p>
-        <a
-          href="https://www.buymeacoffee.com/willy2023"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-amber-500 hover:bg-amber-400 text-black font-semibold px-6 py-2.5 rounded-lg text-sm transition-colors"
-        >
-          Buy Me a Coffee
-        </a>
+        <div className="flex items-center justify-center gap-3">
+          <Link
+            href="/pricing"
+            className="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-2.5 rounded-lg text-sm transition-colors"
+          >
+            See Plans
+          </Link>
+          <a
+            href="https://www.buymeacoffee.com/willy2023"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/30 px-5 py-2.5 rounded-lg text-sm transition-colors"
+          >
+            Buy Me a Coffee
+          </a>
+        </div>
       </div>
 
       <div className="text-center mt-8 text-sm text-gray-600">
         Powered by{" "}
-        <a href="https://github.com" className="underline hover:text-gray-400">
+        <a href="https://github.com/willy2023/uptime-status" className="underline hover:text-gray-400">
           Uptime Status
         </a>{" "}
         -- self-hosted uptime monitoring
