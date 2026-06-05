@@ -1,18 +1,20 @@
-# ?? Uptime Status
+# Uptime Status
 
-Lightweight self-hosted status page & uptime monitor. Monitor your services, display a beautiful public status page, and get instant health checks 閳?all in one simple Next.js app.
+Lightweight self-hosted status page & uptime monitor. Monitor your services, display a beautiful public status page -- all in one simple Next.js app.
 
-## ? Features
+![Status Page](content/screenshots/status-page.png)
 
-- **Service Monitoring** 閳?Add HTTP endpoints and monitor their health
-- **Public Status Page** 閳?Beautiful, real-time status dashboard for your users
-- **Admin Panel** 閳?Add, edit, remove services; trigger on-demand checks
-- **Health Checks** 閳?Automatic HTTP ping with response time tracking
-- **Uptime History** 閳?Visual bar chart of recent check results
-- **Self-Hosted** 閳?Runs anywhere, your data stays with you
-- **Zero Cost** 閳?Uses SQLite, deploy on free tier services
+## Features
 
-## ?? Quick Start
+- **Service Monitoring** -- Add HTTP endpoints and monitor their health
+- **Public Status Page** -- Beautiful, real-time status dashboard for your users
+- **Admin Panel** -- Add, edit, remove services; trigger on-demand checks
+- **Health Checks** -- Automatic HTTP ping with response time tracking
+- **Uptime History** -- Visual bar chart of recent check results
+- **Self-Hosted** -- Runs anywhere, your data stays with you
+- **Zero Cost** -- Uses SQLite, deploy on free tier services
+
+## Quick Start
 
 ### Prerequisites
 
@@ -36,95 +38,62 @@ npx prisma db push
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) 閳?status page is at `/status`, admin panel at `/admin`.
+Open [http://localhost:3000](http://localhost:3000) -- status page at `/status`, admin panel at `/admin`.
 
-## ?? Deploy
+### Deploy to Vercel (Free)
 
-### Vercel (Recommended)
+After pushing to GitHub, connect your repo to Vercel:
+1. Go to [vercel.com/new](https://vercel.com/new)
+2. Import your repository
+3. Add environment variable: `DATABASE_URL="file:./data.db"`
+4. Deploy!
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/willy2023/uptime-status)
-
-> Note: SQLite on Vercel is read-only in production. Use Turso or a different DB provider for production deployments.
-
-### Docker
+### Deploy with Docker
 
 ```bash
-docker build -t uptime-status .
-docker run -p 3000:3000 -v $(pwd)/data:/app/prisma uptime-status
+docker-compose up -d
 ```
 
-### Railway / Render
+## Pricing
 
-Works out of the box 閳?just point to the repo and set build command to `npm run build`, start command to `npm start`.
+| Plan | Price | Details |
+|------|-------|---------|
+| **Self-Hosted** | Free | Full source code, MIT license, deploy anywhere |
+| **Managed Hosting** | $19 one-time | We host it. Automatic updates, email alerts, custom domain |
+| **Enterprise** | $99 one-time | White-label, SLA, priority support |
 
-## ?? Cron Setup
+[See full pricing &rarr;](/pricing)
 
-For automatic health checks, set up a cron job (every 1-5 minutes) to hit:
+## Why Open Source?
 
-```
-GET /api/cron
-```
+1. **Trust** -- You can see exactly what it does. No telemetry, no tracking.
+2. **Customization** -- Fork it, modify it, make it yours.
+3. **Community** -- Feedback and contributions welcome!
 
-**Using Vercel Cron Jobs:**
-```json
-// vercel.json
-{
-  "crons": [
-    { "path": "/api/cron", "schedule": "*/5 * * * *" }
-  ]
-}
-```
+## Support the Project
 
-**Using GitHub Actions:**
-```yaml
-name: Health Check Cron
-on:
-  schedule:
-    - cron: '*/5 * * * *'
-jobs:
-  check:
-    runs-on: ubuntu-latest
-    steps:
-      - run: curl -s https://your-domain.com/api/cron
-```
+- [Buy Me a Coffee](https://www.buymeacoffee.com/willy2023)
+- [GitHub Sponsors](https://github.com/sponsors/willy2023)
+- [Get Managed Hosting](https://willy2023.gumroad.com/l/uptime-status) -- $19 lifetime
 
-## ?? Screenshots
+## Tech Stack
 
-| Status Page | Admin Panel |
-|-------------|-------------|
-| *![Status Page](content/screenshots/status-page.png)* | *![Status Page](content/screenshots/status-page.png)* |
+- **Next.js 14** (App Router)
+- **Prisma** + SQLite
+- **Tailwind CSS**
+- **TypeScript**
 
-## ??? Tech Stack
+## Roadmap
 
-- **Framework**: Next.js 14 (App Router)
-- **Database**: SQLite + Prisma ORM
-- **Styling**: Tailwind CSS
-- **Language**: TypeScript
+- [ ] Email/Slack/Discord alerts
+- [ ] TCP/Port monitoring
+- [ ] SSL certificate expiry checks
+- [ ] Incident management & history
+- [ ] Team multi-user access
+- [ ] API key auth for programmatic access
 
-## ?? License
+Managed hosting customers get priority access to new features.
 
-MIT 閳?see [LICENSE](./LICENSE) for details.
+## License
 
-## ?? Contributing
-
-Contributions welcome! Open an issue or PR.
-
-1. Fork the repo
-2. Create a feature branch (`git checkout -b feature/amazing`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push (`git push origin feature/amazing`)
-5. Open a Pull Request
-
-## ?? Support This Project
-
-- ☕ [Buy Me a Coffee](https://www.buymeacoffee.com/willy2023)
-
-If Uptime Status helps you, consider:
-
-- ? Starring the repo on GitHub
-- ?? [GitHub Sponsors](https://github.com/sponsors/willy2023)
-- ?? [Managed Hosting](https://your-domain.com) 閳?$19 one-time, we host it for you
-
----
-
-Built with ?? by [Your Name](https://github.com/willy2023)
+MIT -- see [LICENSE](LICENSE)
