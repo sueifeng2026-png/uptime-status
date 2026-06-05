@@ -39,6 +39,9 @@ export default async function StatusPage() {
 
   const allUp = services.length > 0 && services.every((s) => s.status === "up")
   const anyDown = services.some((s) => s.status === "down")
+  const uptimePercent = services.length > 0
+    ? Math.round((services.filter(s => s.status === "up").length / services.length) * 100)
+    : 100
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
@@ -52,6 +55,11 @@ export default async function StatusPage() {
             {allUp ? "All Systems Operational" : anyDown ? "Some Systems Down" : "Checking..."}
           </span>
         </div>
+        {services.length > 0 && (
+          <p className="text-sm text-gray-500 mt-1">
+            {uptimePercent}% uptime · {services.length} service{services.length > 1 ? "s" : ""} monitored
+          </p>
+        )}
       </div>
 
       <div className="space-y-3">
@@ -83,8 +91,40 @@ export default async function StatusPage() {
         )}
       </div>
 
+      {/* Managed Features Teaser */}
+      <div className="mt-8 bg-gray-900 border border-gray-700 rounded-xl p-5">
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="font-semibold text-sm">🔒 Managed Hosting Features</h3>
+          <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full border border-emerald-500/30">$19 lifetime</span>
+        </div>
+        <div className="grid grid-cols-2 gap-2">
+          {[
+            { icon: "📧", text: "Email alerts on downtime", locked: true },
+            { icon: "🔔", text: "Slack / Discord notifications", locked: true },
+            { icon: "🌐", text: "Custom domain (status.yours.com)", locked: true },
+            { icon: "🎨", text: "White-label branding & logo", locked: true },
+            { icon: "📊", text: "30-day uptime history", locked: true },
+            { icon: "⚡", text: "30-second check intervals", locked: true },
+            { icon: "🔒", text: "SSL certificate monitoring", locked: true },
+            { icon: "👥", text: "Team access (multi-user)", locked: true },
+          ].map((f, i) => (
+            <div key={i} className="flex items-center gap-2 text-xs text-gray-500 py-1">
+              <span className="opacity-50">{f.icon}</span>
+              <span className="line-through">{f.text}</span>
+              <span className="text-[10px] text-emerald-600 ml-auto">PRO</span>
+            </div>
+          ))}
+        </div>
+        <Link
+          href="/pricing"
+          className="mt-4 inline-block w-full text-center bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 py-2 rounded-lg text-sm font-medium transition-colors"
+        >
+          Unlock All Features → $19 lifetime
+        </Link>
+      </div>
+
       {/* Status Badge */}
-      <div className="mt-8 bg-gray-900 border border-gray-800 rounded-xl p-5">
+      <div className="mt-6 bg-gray-900 border border-gray-800 rounded-xl p-5">
         <h3 className="font-semibold text-sm mb-2">Embed Status Badge</h3>
         <p className="text-xs text-gray-400 mb-3">
           Add a live status badge to your README or website:
