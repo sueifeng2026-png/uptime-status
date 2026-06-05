@@ -92,7 +92,7 @@ export default async function StatusPage() {
         <a href="https://github.com" className="underline hover:text-gray-400">
           Uptime Status
         </a>{" "}
-        �� self-hosted uptime monitoring
+        -- self-hosted uptime monitoring
       </div>
     </div>
   )

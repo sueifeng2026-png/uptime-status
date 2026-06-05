@@ -1,16 +1,16 @@
 # ?? Uptime Status
 
-Lightweight self-hosted status page & uptime monitor. Monitor your services, display a beautiful public status page, and get instant health checks — all in one simple Next.js app.
+Lightweight self-hosted status page & uptime monitor. Monitor your services, display a beautiful public status page, and get instant health checks 閳?all in one simple Next.js app.
 
 ## ? Features
 
-- **Service Monitoring** — Add HTTP endpoints and monitor their health
-- **Public Status Page** — Beautiful, real-time status dashboard for your users
-- **Admin Panel** — Add, edit, remove services; trigger on-demand checks
-- **Health Checks** — Automatic HTTP ping with response time tracking
-- **Uptime History** — Visual bar chart of recent check results
-- **Self-Hosted** — Runs anywhere, your data stays with you
-- **Zero Cost** — Uses SQLite, deploy on free tier services
+- **Service Monitoring** 閳?Add HTTP endpoints and monitor their health
+- **Public Status Page** 閳?Beautiful, real-time status dashboard for your users
+- **Admin Panel** 閳?Add, edit, remove services; trigger on-demand checks
+- **Health Checks** 閳?Automatic HTTP ping with response time tracking
+- **Uptime History** 閳?Visual bar chart of recent check results
+- **Self-Hosted** 閳?Runs anywhere, your data stays with you
+- **Zero Cost** 閳?Uses SQLite, deploy on free tier services
 
 ## ?? Quick Start
 
@@ -36,7 +36,7 @@ npx prisma db push
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) — status page is at `/status`, admin panel at `/admin`.
+Open [http://localhost:3000](http://localhost:3000) 閳?status page is at `/status`, admin panel at `/admin`.
 
 ## ?? Deploy
 
@@ -55,7 +55,7 @@ docker run -p 3000:3000 -v $(pwd)/data:/app/prisma uptime-status
 
 ### Railway / Render
 
-Works out of the box — just point to the repo and set build command to `npm run build`, start command to `npm start`.
+Works out of the box 閳?just point to the repo and set build command to `npm run build`, start command to `npm start`.
 
 ## ?? Cron Setup
 
@@ -92,7 +92,7 @@ jobs:
 
 | Status Page | Admin Panel |
 |-------------|-------------|
-| *Coming soon* | *Coming soon* |
+| *![Status Page](content/screenshots/status-page.png)* | *![Status Page](content/screenshots/status-page.png)* |
 
 ## ??? Tech Stack
 
@@ -103,7 +103,7 @@ jobs:
 
 ## ?? License
 
-MIT — see [LICENSE](./LICENSE) for details.
+MIT 閳?see [LICENSE](./LICENSE) for details.
 
 ## ?? Contributing
 
@@ -117,11 +117,13 @@ Contributions welcome! Open an issue or PR.
 
 ## ?? Support This Project
 
+- ☕ [Buy Me a Coffee](https://www.buymeacoffee.com/willy2023)
+
 If Uptime Status helps you, consider:
 
 - ? Starring the repo on GitHub
 - ?? [GitHub Sponsors](https://github.com/sponsors/willy2023)
-- ?? [Managed Hosting](https://your-domain.com) — $19 one-time, we host it for you
+- ?? [Managed Hosting](https://your-domain.com) 閳?$19 one-time, we host it for you
 
 ---
 
