@@ -41,7 +41,6 @@ export default async function StatusPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
-      {/* Header */}
       <div className="text-center mb-10">
         <h1 className="text-3xl font-bold mb-2">System Status</h1>
         <div className="flex items-center justify-center gap-2">
@@ -54,7 +53,6 @@ export default async function StatusPage() {
         </div>
       </div>
 
-      {/* Service list */}
       <div className="space-y-3">
         {services.map((svc) => (
           <div key={svc.id} className="bg-gray-900 border border-gray-800 rounded-xl p-5">
@@ -68,9 +66,7 @@ export default async function StatusPage() {
             <div className="mt-3 flex items-center gap-4 text-xs text-gray-500">
               {svc.responseMs != null && <span>Response: {svc.responseMs}ms</span>}
               {svc.lastChecked && (
-                <span>
-                  Last checked: {new Date(svc.lastChecked).toLocaleString()}
-                </span>
+                <span>Last checked: {new Date(svc.lastChecked).toLocaleString()}</span>
               )}
             </div>
             <div className="mt-3">
@@ -86,8 +82,22 @@ export default async function StatusPage() {
         )}
       </div>
 
-      {/* Footer */}
-      <div className="text-center mt-10 text-sm text-gray-600">
+      <div className="mt-10 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-6 text-center">
+        <p className="text-amber-300 font-medium text-lg mb-2">Support This Project</p>
+        <p className="text-gray-400 text-sm mb-4">
+          Uptime Status is free and open source. If it helps you, consider buying me a coffee!
+        </p>
+        <a
+          href="https://www.buymeacoffee.com/willy2023"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-amber-500 hover:bg-amber-400 text-black font-semibold px-6 py-2.5 rounded-lg text-sm transition-colors"
+        >
+          Buy Me a Coffee
+        </a>
+      </div>
+
+      <div className="text-center mt-8 text-sm text-gray-600">
         Powered by{" "}
         <a href="https://github.com" className="underline hover:text-gray-400">
           Uptime Status
