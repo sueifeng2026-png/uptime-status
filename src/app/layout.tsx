@@ -16,12 +16,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/status" className="font-bold text-emerald-400 tracking-tight">
               Uptime Status
             </Link>
-            <div className="flex items-center gap-6 text-sm">
+            <div className="flex items-center gap-4 md:gap-6 text-sm">
               <Link href="/status" className="text-gray-400 hover:text-gray-200 transition-colors">
                 Status
               </Link>
               <Link href="/pricing" className="text-gray-400 hover:text-gray-200 transition-colors">
                 Pricing
+              </Link>
+              <Link href="/share" className="text-gray-400 hover:text-gray-200 transition-colors">
+                Share
               </Link>
               <Link href="/admin" className="text-gray-400 hover:text-gray-200 transition-colors">
                 Admin
@@ -30,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 href="https://github.com/willy2023/uptime-status"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-gray-300 transition-colors"
+                className="text-gray-500 hover:text-gray-300 transition-colors hidden md:block"
               >
                 GitHub
               </a>
