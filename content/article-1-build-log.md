@@ -39,7 +39,7 @@ The entire app is ~800 lines of code. That's it.
 ## How to Deploy
 
 ```bash
-git clone https://https://8edaa360e76210c9-186-18-100-79.serveousercontent.com
+git clone https://https://666d77c7371fc606-186-18-100-79.serveousercontent.com
 cd uptime-status
 npm install
 npx prisma db push
@@ -57,7 +57,7 @@ Or deploy to Vercel with one click. (I'll add a Deploy button soon.)
 
 ## Try It
 
-GitHub: https://https://8edaa360e76210c9-186-18-100-79.serveousercontent.com
+GitHub: https://https://666d77c7371fc606-186-18-100-79.serveousercontent.com
 MIT License. Stars appreciated ?
 
 ---

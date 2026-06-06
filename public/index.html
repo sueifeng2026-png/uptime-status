@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uptime Status - Free Self-Hosted Status Page</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; min-height: 100vh }
+.hero { text-align: center; padding: 80px 20px 40px; max-width: 700px; margin: 0 auto }
+.hero h1 { font-size: 2.8em; margin-bottom: 16px; color: #4ade80 }
+.hero p { font-size: 1.2em; color: #999; margin-bottom: 32px; line-height: 1.6 }
+.btn { display: inline-block; padding: 14px 32px; border-radius: 10px; font-size: 1.1em; font-weight: 600; text-decoration: none; transition: all .2s; margin: 6px }
+.btn-primary { background: #4ade80; color: #000 }
+.btn-primary:hover { background: #22c55e }
+.btn-secondary { background: rgba(255,255,255,0.08); color: #ccc; border: 1px solid rgba(255,255,255,0.12) }
+.btn-secondary:hover { background: rgba(255,255,255,0.15) }
+.features { max-width: 800px; margin: 40px auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px }
+.card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px }
+.card h3 { font-size: 1.1em; margin-bottom: 8px; color: #4ade80 }
+.card p { font-size: 0.9em; color: #888; line-height: 1.5 }
+.price { max-width: 600px; margin: 40px auto; padding: 20px; text-align: center }
+.price h2 { font-size: 1.8em; margin-bottom: 24px }
+.tiers { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap }
+.tier { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 24px; width: 200px; text-align: center }
+.tier.featured { border-color: #4ade80; background: rgba(74,222,128,0.05) }
+.tier h4 { margin-bottom: 8px }
+.tier .price-tag { font-size: 2em; font-weight: 700; color: #4ade80; margin: 12px 0 }
+.tier .period { font-size: 0.8em; color: #888 }
+.footer { text-align: center; padding: 40px 20px; color: #555; font-size: 0.85em }
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>Uptime Status</h1>
+<p>Lightweight self-hosted status page & uptime monitor. Monitor your services, display a beautiful public status page. MIT licensed, SQLite, zero config.</p>
+<a href="https://666d77c7371fc606-186-18-100-79.serveousercontent.com/status" class="btn btn-primary">Live Demo</a>
+<a href="https://github.com/willy2023/uptime-status" class="btn btn-secondary">GitHub</a>
+</div>
+
+<div class="features">
+<div class="card"><h3>Service Monitoring</h3><p>Add HTTP endpoints, auto health checks every 5 min with response time tracking.</p></div>
+<div class="card"><h3>Public Dashboard</h3><p>Beautiful dark-themed status page your users can check anytime.</p></div>
+<div class="card"><h3>Status Badge</h3><p>Embeddable SVG badge for your README. Always shows live status.</p></div>
+<div class="card"><h3>Admin Panel</h3><p>CRUD services, trigger on-demand checks, view uptime history.</p></div>
+<div class="card"><h3>Zero Dependencies</h3><p>SQLite database. No PostgreSQL. No Redis. Just clone and run.</p></div>
+<div class="card"><h3>Docker Support</h3><p>Comes with docker-compose. Deploy anywhere in 5 minutes.</p></div>
+</div>
+
+<div class="price">
+<h2>Simple Pricing</h2>
+<div class="tiers">
+<div class="tier"><h4>Self-Hosted</h4><div class="price-tag">Free</div><div class="period">forever</div><p style="color:#888;font-size:0.85em;margin-top:8px">MIT License. Your server, your data.</p></div>
+<div class="tier featured"><h4>Managed</h4><div class="price-tag">$19</div><div class="period">one-time</div><p style="color:#4ade80;font-size:0.85em;margin-top:8px">We host it. Alerts, SSL, updates.</p></div>
+<div class="tier"><h4>Enterprise</h4><div class="price-tag">$99</div><div class="period">one-time</div><p style="color:#888;font-size:0.85em;margin-top:8px">White-label, SLA, priority support.</p></div>
+</div>
+<br><br>
+<a href="https://www.buymeacoffee.com/willy2023" class="btn btn-primary">Buy Me a Coffee</a>
+</div>
+
+<div class="footer">
+Built with Next.js 14, Prisma, SQLite, Tailwind CSS. MIT Licensed.
+</div>
+</body>
+</html>

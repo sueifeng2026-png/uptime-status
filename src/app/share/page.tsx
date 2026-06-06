@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 export default function SharePage() {
-  const demoUrl = "https://8edaa360e76210c9-186-18-100-79.serveousercontent.com"
+  const demoUrl = "https://666d77c7371fc606-186-18-100-79.serveousercontent.com"
   const [copied, setCopied] = useState(false)
 
   const redditText = `Title: I built a free, self-hosted status page (MIT, Next.js + SQLite)
