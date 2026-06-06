@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero */}
       <div style={{ textAlign: "center", padding: "80px 20px 40px", maxWidth: 700, margin: "0 auto" }}>
         <div style={{ display: "inline-block", background: "rgba(74,222,128,0.1)", color: "#4ade80", padding: "6px 16px", borderRadius: 20, fontSize: "0.85em", marginBottom: 20, border: "1px solid rgba(74,222,128,0.2)" }}>
-          Used by 100+ developers 路 Open Source
+          Open Source 路
         </div>
         <h1 style={{ fontSize: "3em", marginBottom: 16, color: "#fff", lineHeight: 1.2 }}>
           Show Your Users Your
@@ -113,6 +113,11 @@ export default function Home() {
             fontWeight: 600, textDecoration: "none", background: "rgba(255,255,255,0.06)",
             color: "#ccc", border: "1px solid rgba(255,255,255,0.12)"
           }}>☕ Buy Me a Coffee</a>
+          <a href="https://github.com/sueifeng2026-png/uptime-status" target="_blank" rel="noopener noreferrer" style={{
+            display: "inline-flex", alignItems: "center", gap: 6, padding: "16px 36px", borderRadius: 12, fontSize: "1em",
+            fontWeight: 600, textDecoration: "none", background: "rgba(255,255,255,0.06)",
+            color: "#ccc", border: "1px solid rgba(255,255,255,0.12)"
+          }}>⭐ Star on GitHub</a>
         </div>
       </div>
 

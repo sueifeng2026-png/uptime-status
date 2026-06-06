@@ -1,54 +1,79 @@
-# Uptime Status - Managed Hosting ($19 One-Time)
+# Uptime Status — Managed Hosting
 
-## Quick Pitch (for Gumroad card)
-> A beautiful status page for your services. One-time payment, lifetime hosting. No monthly fees.
+## Beautiful Status Page. Zero Setup. $19 Lifetime.
 
-## Product Description
-
-### What You Get
-- **Fully managed status page** at `your-project.uptimestatus.dev`
-- **Unlimited services** — monitor as many endpoints as you want
-- **Automatic health checks** every 5 minutes
-- **Custom domain** support (bring your own domain)
-- **Lifetime access** — pay once, use forever
-- **No code required** — we handle everything
-
-### Why Self-Hosted Isn't For Everyone
-The open-source version is great, but you need to:
-- Set up a server ($5-20/month)
-- Configure cron jobs
-- Handle updates and maintenance
-- Deal with SSL certificates
-
-With Managed Hosting, you get all of that done for you. One payment, zero hassle.
-
-### Perfect For
-- Indie hackers monitoring their SaaS
-- Freelancers showing uptime to clients
-- Small teams that want a professional status page
-- Anyone who wants "set it and forget it"
-
-### Pricing
-**$19** — One-time payment, lifetime access
-
-Includes: unlimited services, automatic checks, custom domain, email alerts (coming soon)
-
-### FAQ
-**Q: Is this really one-time? No monthly fees?**
-A: Yes. Pay once, use forever. We cover hosting costs from our margins.
-
-**Q: Can I use my own domain?**
-A: Yes! Just point your CNAME record to us.
-
-**Q: What happens if your servers go down?**
-A: Our monitoring infrastructure runs on multiple cloud providers. If we go down, you'll know — and so will we.
-
-**Q: Can I cancel and get a refund?**
-A: 30-day money-back guarantee. No questions asked.
+**Your own status page, live in 60 seconds. No server, no config, no monthly fees.**
 
 ---
 
-## Links
+### What You Get
+
+✅ **Instant Setup** — We create your status page within 60 seconds of purchase
+✅ **Unlimited Services** — Monitor as many HTTP endpoints as you want
+✅ **Custom Domain** — Use your own domain (status.yourproject.com)
+✅ **Automatic Checks** — We ping your services every 5 minutes
+✅ **Beautiful Dashboard** — Dark-themed public status page your users will love
+✅ **Status Badge** — Embed a live SVG badge in your GitHub README
+✅ **Lifetime Access** — Pay once, use forever. No subscription.
+✅ **Email Alerts** — Get notified when your services go down (coming soon)
+
+---
+
+### Why Not Self-Host?
+
+Self-hosting is great if you enjoy:
+- Setting up servers ($5-20/month for a VPS)
+- Configuring cron jobs and SSL certificates
+- Maintaining and updating software
+- Debugging when things break
+
+**Managed Hosting handles all of that.** You focus on your product, we handle the status page.
+
+---
+
+### Perfect For
+
+👨‍💻 **Indie Hackers** — Show your SaaS is reliable without extra infrastructure
+🎨 **Freelancers** — Impress clients with a professional status page
+👥 **Small Teams** — Keep your users informed without hiring DevOps
+🚀 **Startups** — Launch faster with zero infrastructure overhead
+
+---
+
+### Pricing: $19 — One-Time
+
+- ✅ Lifetime access  
+- ✅ Unlimited services  
+- ✅ Custom domain  
+- ✅ Automatic updates  
+- ✅ 30-day money-back guarantee
+
+---
+
+### FAQ
+
+**Q: Is this really one-time?**
+A: Yes. $19 once, use forever. No hidden fees.
+
+**Q: How fast is setup?**
+A: Usually within 60 seconds of purchase. We'll email you the link.
+
+**Q: Can I use my own domain?**
+A: Yes! Point a CNAME record to us and we handle the rest.
+
+**Q: What if I change my mind?**
+A: 30-day full refund, no questions asked.
+
+**Q: How is this sustainable?**
+A: Open source project funded by the community. Managed hosting helps cover infrastructure costs.
+
+---
+
+### Get Started
+
+Click "I want this!" above to get your status page live today.
+
+---
+
 - GitHub: https://github.com/sueifeng2026-png/uptime-status
-- Demo: https://uptime-status-demo.vercel.app/status
-- Managed: https://your-domain.com (coming soon)
+- Demo: https://uptime-status-navy.vercel.app/status
