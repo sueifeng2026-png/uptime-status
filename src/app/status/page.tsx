@@ -208,7 +208,7 @@ export default async function StatusPage() {
             See Plans
           </Link>
           <a
-            href="https://www.buymeacoffee.com/willy2023"
+            href="https://www.buymeacoffee.com/sueifeng2026-png"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/30 px-5 py-2.5 rounded-lg text-sm transition-colors"
@@ -220,7 +220,7 @@ export default async function StatusPage() {
 
       <div className="text-center mt-8 text-sm text-gray-600">
         Powered by{" "}
-        <a href="https://github.com/willy2023/uptime-status" className="underline hover:text-gray-400">
+        <a href="https://github.com/sueifeng2026-png/uptime-status" className="underline hover:text-gray-400">
           Uptime Status
         </a>{" "}
         -- self-hosted uptime monitoring

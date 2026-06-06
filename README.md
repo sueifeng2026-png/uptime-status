@@ -25,7 +25,7 @@ Lightweight self-hosted status page & uptime monitor. Monitor your services, dis
 
 ```bash
 # Clone the repo
-git clone https://github.com/willy2023/uptime-status.git
+git clone https://github.com/sueifeng2026-png/uptime-status.git
 cd uptime-status
 
 # Install dependencies
@@ -72,9 +72,9 @@ docker-compose up -d
 
 ## Support the Project
 
-- [Buy Me a Coffee](https://www.buymeacoffee.com/willy2023)
-- [GitHub Sponsors](https://github.com/sponsors/willy2023)
-- [Get Managed Hosting](https://willy2023.gumroad.com/l/uptime-status) -- $19 lifetime
+- [Buy Me a Coffee](https://www.buymeacoffee.com/sueifeng2026-png)
+- [GitHub Sponsors](https://github.com/sponsors/sueifeng2026-png)
+- [Get Managed Hosting](https://sueifeng2026-png.gumroad.com/l/uptime-status) -- $19 lifetime
 
 ## Tech Stack
 

@@ -7,3 +7,4 @@ prisma/data.db-journal
 .env.local
 *.tsbuildinfo
 next-env.d.ts
+.vercel

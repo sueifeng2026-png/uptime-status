@@ -49,6 +49,6 @@ A: 30-day money-back guarantee. No questions asked.
 ---
 
 ## Links
-- GitHub: https://github.com/willy2023/uptime-status
+- GitHub: https://github.com/sueifeng2026-png/uptime-status
 - Demo: https://uptime-status-demo.vercel.app/status
 - Managed: https://your-domain.com (coming soon)
