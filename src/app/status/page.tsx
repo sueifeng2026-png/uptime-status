@@ -4,7 +4,7 @@ import Link from "next/link"
 export const dynamic = "force-dynamic"
 
 function StatusBadge({ status }: { status: string }) {
-  const colors = {
+  const colors: Record<string, string> = {
     up: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
     down: "bg-red-500/20 text-red-400 border-red-500/30",
     unknown: "bg-gray-500/20 text-gray-400 border-gray-500/30",

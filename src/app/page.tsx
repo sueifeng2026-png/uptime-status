@@ -44,7 +44,7 @@ export default function Home() {
             ["Managed", "$19", "We host it. Alerts, SSL, updates.", true],
             ["Enterprise", "$99", "White-label, SLA, priority support.", false]
           ].map(([name, price, desc, featured]) => (
-            <div key={name} style={{
+            <div key={String(name)} style={{
               background: featured ? "rgba(74,222,128,0.05)" : "rgba(255,255,255,0.03)",
               border: `1px solid ${featured ? "#4ade80" : "rgba(255,255,255,0.08)"}`,
               borderRadius: 12, padding: 24, width: 200, textAlign: "center"
